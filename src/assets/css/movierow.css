@@ -1,0 +1,61 @@
+/* MovieRow.css */
+.movie-row {
+    margin-bottom: 20px;
+  }
+  
+  .movie-row__content {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    gap: 15px;
+    scrollbar-width: thin; /* For modern browsers */
+    scrollbar-color: #e50914 transparent;
+  }
+  
+  .movie-row__content::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .movie-row__content::-webkit-scrollbar-thumb {
+    background-color: #e50914;
+    border-radius: 10px;
+  }
+  
+  .movie-card {
+    position: relative;
+    min-width: 200px;
+    max-width: 200px;
+    flex: 0 0 auto;
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 10px;
+  }
+  
+  .movie-title {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .movie-rating,
+  .movie-duration {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
